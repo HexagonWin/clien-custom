@@ -31,3 +31,11 @@ area_terms.appendChild(button_cs);
 var check_auto = $(".side_account:nth-of-type(1) .account_submit .check_auto");
 var button_submit = $(".side_account:nth-of-type(1) .side_account_area .button_submit");
 check_auto.insertBefore(button_submit);
+
+// 게시글 정보 고치기
+var view_count = $(".content_view .post_author .view_count:nth-of-type(1)");
+var post_info = $(".content_view .post_info")
+var post_author = $(".content_view .post_author");
+var post_content = $(".content_view .post_view .post_content");
+post_author.insertBefore(post_content);
+post_info.append(view_count);
